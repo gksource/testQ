@@ -11,4 +11,4 @@ def insecure_socket_bind_noncompliant():
     import socket
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     # Noncompliant: Empty IP Address is passed when binding to a socket.
-    s.bind(('', 0))
+    s.bind(('127.0.0.1', 0))
