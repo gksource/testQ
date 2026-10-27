@@ -10,5 +10,5 @@ print(f'Sum of {a} and {b} is {sum(a, b)}')
 def insecure_socket_bind_noncompliant():
     import socket
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    # Noncompliant: Empty IP Address is passed when binding to a socket.
+    # Noncompliant: Empty IP Address is passed when binding to a socket. Hi
     s.bind(('', 0))
